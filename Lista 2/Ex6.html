@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+          width: 50%;
+          margin: auto;
+        }
+        input, select {
+          padding: 5px;
+          margin-top: 5px;
+        }
+      </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+          <legend>Dados pessoais</legend>
+  
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" />
+          <br />
+          <label for="idade">Idade:</label>
+          <input type="text" id="idade" name="idade" />
+        </fieldset>
+  
+        <fieldset>
+          <legend>Dados profissionais</legend>
+  
+          <label for="escolaridade">Escolaridade:</label>
+          <select id="escolaridade" name="escolaridade">
+            <option value="ensinoMedio">Ensino Méidio</option>
+            <option value="ensinoFundamental">Ensino Fundamental</option>
+            <option value="ensinoSuperior">Ensino Superior</option>
+          </select>
+          <br />
+          <span>Área de atuação:</span>
+          <input type="radio" placeholder="Gerencia" id="1" name="atuacao" />
+          <label for="1">Gerência</label>
+          <input type="radio" placeholder="Financeiro" id="2" name="atuacao" />
+          <label for="2">Financeiro</label>
+          <input type="radio" placeholder="Recepção" id="3" name="atuacao" />
+          <label for="3">Recepção</label>
+        </fieldset>
+      </form>
+</body>
+</html>
